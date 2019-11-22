@@ -17,19 +17,19 @@
  
 
 
- function debounce(fn,w) {
-     var timeout;
-     return function() {  
-         later = ()=>{    
-            //apply request here;
-             fn();
-         }
-         clearTimeout(timeout);
-         timeout = setTimeout(later,w);        
-         console.log(timeout)
-     }   
- };
+###### function debounce(fn,w) {
+ ######    var timeout;
+ ######    return function() {  
+ ######        later = ()=>{    
+  ######          //apply request here;
+  ######           fn();
+ ######        }
+  ######       clearTimeout(timeout);
+   ######      timeout = setTimeout(later,w);        
+   ######      console.log(timeout)
+   ######  }   
+###### };
 
- var myEfficientFn = debounce(function() {
- 	console.log("Debouncing Achieved")
- }, 250);
+ ######var myEfficientFn = debounce(function() {
+ ######	console.log("Debouncing Achieved")
+ ######}, 250);
